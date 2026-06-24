@@ -425,20 +425,27 @@
           font-size: 16px;
         }
       }
+      /* HTML: <div class="loader"></div> */
+      .loadingAnim {
+        width: 100px;
+        aspect-ratio: 1;
+        border-radius: 50%;
+        border: 8px solid;
+        border-color: #ffffff #0000;
+        animation: l1 1s infinite;
+      }
+      @keyframes l1 {to{transform: rotate(.5turn)}}
       .loading{
         z-index: 13;
         position: fixed;
         padding: 20px;
         left: 50%;
         transform: translate(-50%, 0%);
-        height: 60px;
+        height: 150px;
         width: 150px;
-        background-color: rgba(0, 0, 0, 0.7);
-        border-radius: 15px;
         display: flex;
         justify-content: center;
         align-items: center;
-        backdrop-filter: blur(5px);
       }
       .loadingText{
         width: fit-content;
@@ -743,7 +750,7 @@
       }
       
     </style>
-    <script type="module" crossorigin src="/costumePresentationAppDemo/assets/main-C5CvnNF9.js"></script>
+    <script type="module" crossorigin src="/costumePresentationAppDemo/assets/main-Xy_FpZWy.js"></script>
     <link rel="modulepreload" crossorigin href="/costumePresentationAppDemo/assets/modulepreload-polyfill-wMinxHhO.js">
   </head>
   <body>
@@ -803,7 +810,7 @@
         </div>
         <div class="bottomButtonContainer">
           <button id="resetForm" type="button" class="resetButton mainFont small red">Zrušit</button>
-          <a href="/tutorial.html">
+          <a href="/costumePresentationAppDemo/tutorial.html">
             <button type="button" class="tutorialButton mainFont small">Návod</button>
           </a>
           <button id="preview" type="button" class="previewButton mainFont small">Náhled</button>
@@ -819,7 +826,7 @@
           Cílem aplikace bylo vytvořit veřejný prostor pro dokumentaci a&nbsp;prezentaci krojů a&nbsp;přitom zjednodušit proces skenování a&nbsp;sdílení modelů.<br />
           <br />
           Hlavní částí je prohlížeč kroje, který může návštěvník otáčet (levé tlačítko), přibližovat (kolečko) a&nbsp;posouvat (pravé tlačítko). V&nbsp;levé části se nachází popis kroje a&nbsp;na pravo menu se sekcemi Obrázky, Součásti a&nbsp;Kroje. V&nbsp;sekci Součásti může uživatel libovolně vypínat jednotlivé části oblečení pro prohlížení všech vrstev a&nbsp;sekce Kroje slouží pro výběr modelu.<br />
-          Dále je v&nbsp;menu možné nahrát nový kroj. Ten musí mít název, popis a&nbsp;alespoň jeden model ve formátu GLB. Rovněž je možné nahrát fotografie kroje, z nichž první bude použita v&nbsp;menu výběru krojů. <a href="/tutorial.html">Kompletní průvodce procesem</a> je přístupný z panelu nahrávání kroje.<br />
+          Dále je v&nbsp;menu možné nahrát nový kroj. Ten musí mít název, popis a&nbsp;alespoň jeden model ve formátu GLB. Rovněž je možné nahrát fotografie kroje, z nichž první bude použita v&nbsp;menu výběru krojů. <a href="/costumePresentationAppDemo/tutorial.html">Kompletní průvodce procesem</a> je přístupný z panelu nahrávání kroje.<br />
           <br />
           Aplikace byla vytvořena v&nbsp;rámci magisterské práce "Interactive Web Platform for Presenting 3D Models of Folk Costumes" na FI MUNI.<br />
           <br />
